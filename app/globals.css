@@ -17,20 +17,22 @@ h1{
 
 .question-card{
   border: 2px solid black;
-  padding: 10px;
+  padding: 20px;
   margin:auto;
-  height: 150px;
-  width: 200px;
+  height: 175px;
+  width: 325px;
   text-align: center;
+  background-image: url("./assets/FlashCard-Question\ Background\ img.png");
 }
 
 .answer-card{
   border: 2px solid black;
-  padding: 10px;
+  padding: 20px;
   margin:auto;
-  height: 150px;
-  width: 200px;
+  height: 175px;
+  width: 325px;
   text-align: center;
+  background-image: url("./assets/FlashCard-\ Answer\ Background\ img.png");
 }
 
 .hide{
@@ -50,14 +52,20 @@ h1{
 
 }
 
-.start-over-button{
+.start-over-button-box{
   display: flex;
   justify-content: center;
-margin-top: 25px;
+  margin-top: 25px;
+  
 }
 
+.start-over-button{
+  background-color: rgb(244, 244, 190);
+  font-family: monospace;
+}
 .display-form{
   display: flex;
+  flex-direction: column;
   position: absolute;
   right: 25px;
   justify-content: center;
@@ -69,9 +77,36 @@ margin-top: 25px;
 }
 
 .right-button{
- background-color: rgb(102, 254, 102);
+ background-color: rgb(190, 237, 190);
+ height: 50px;
+ font-size: 15px;
+ font-family:monospace;
 }
 
 .wrong-button{
-  background-color: rgb(246, 128, 128);
+  background-color: rgb(238, 175, 175);
+  height: 50px;
+  font-size: 15px;
+  font-family:monospace;
+}
+
+input{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 350px;
+}
+
+.formSubmitButton{
+  margin-top: 15px;
+}
+
+.exitButton{
+  align-self: flex-end;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.directions-box{
+  text-align: center;
+  color: blue;
 }
